@@ -1,5 +1,5 @@
 {
-    "name": "phputils/async",
+    "name": "phputility/async",
     "description": "A lightweight PHP library for asynchronous HTTP requests using curl_multi_* functions",
     "type": "library",
     "keywords": ["http", "async", "parallel", "curl", "requests", "php"],

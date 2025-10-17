@@ -40,7 +40,7 @@ Composer is the preferred method for modern PHP projects.
 
 ```bash
 # Add to your project
-composer require phputils/async
+composer require phputility/async
 
 # Or add to composer.json manually
 {

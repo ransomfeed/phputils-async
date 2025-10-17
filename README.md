@@ -25,7 +25,7 @@ A lightweight PHP library for asynchronous HTTP requests using native `curl_mult
 ## Installation
 
 ```bash
-composer require phputils/async
+composer require phputility/async
 ```
 
 Or add it to your `composer.json`:

@@ -62,7 +62,7 @@ phputils-async/
 
 ### 1. Composer (Recommended)
 ```bash
-composer require phputils/async
+composer require phputility/async
 ```
 
 ### 2. Standalone File
