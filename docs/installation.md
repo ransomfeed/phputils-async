@@ -45,7 +45,7 @@ composer require phputility/async
 # Or add to composer.json manually
 {
     "require": {
-        "phputils/async": "^1.0"
+        "phputility/async": "^1.0"
     }
 }
 ```

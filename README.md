@@ -33,7 +33,7 @@ Or add it to your `composer.json`:
 ```json
 {
     "require": {
-        "phputils/async": "^1.0"
+        "phputility/async": "^1.0"
     }
 }
 ```
