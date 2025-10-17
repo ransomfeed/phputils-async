@@ -1,0 +1,56 @@
+{
+    "name": "phputils/async",
+    "description": "A lightweight PHP library for asynchronous HTTP requests using curl_multi_* functions",
+    "type": "library",
+    "keywords": ["http", "async", "parallel", "curl", "requests", "php"],
+    "homepage": "https://github.com/ransomfeed/phputils-async",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuke{} (Ransomfeed Team)",
+            "email": "nuke@spcnet.it"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5 || ^10.0",
+        "phpstan/phpstan": "^1.0",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phputils\\Async\\": "src/Phputils/Async/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phputils\\Async\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "phpstan": "phpstan analyse src/ --level=8",
+        "cs-check": "phpcs src/ tests/ --standard=PSR12",
+        "cs-fix": "phpcbf src/ tests/ --standard=PSR12",
+        "quality": [
+            "@cs-check",
+            "@phpstan",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    }
+}
